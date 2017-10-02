@@ -13371,11 +13371,12 @@ ftp://ftp.math.ethz.ch/sfs/Manuscripts/buhlmann/handbook-cs-rev2010.pdf
 <p>logistic regression</p>
 <ol>
 <li>logistic regression modeling can be used to predict customer retention,</li>
-<li>requires large sample size to achieve stable results.</li>
+<li>requires large sample size to achieve stable results.perform well in low to signal to noise ratio </li>
 <li>Doesn’t perform well when feature space is too large</li>
-<li>IT is a binary classification and logsistic regression does well with binary classification</li>
+<li>dataset has sufficient examples to use logistic regression and moreover we need a robust algorithm having low signal to noise ratio(dataset is expexted to have noise)</li>
 </ol>
-<p><a href="https://www.edvancer.in/logistic-regression-vs-decision-trees-vs-svm-part2/">https://www.edvancer.in/logistic-regression-vs-decision-trees-vs-svm-part2/</a></p>
+<p><a href="https://www.edvancer.in/logistic-regression-vs-decision-trees-vs-svm-part2/">https://www.edvancer.in/logistic-regression-vs-decision-trees-vs-svm-part2/</a>
+<a href="https://www.forbes.com/sites/quora/2017/06/19/what-are-the-advantages-of-logistic-regression-over-decision-trees/#488fdffd2c35">https://www.forbes.com/sites/quora/2017/06/19/what-are-the-advantages-of-logistic-regression-over-decision-trees/#488fdffd2c35</a></p>
 
 </div>
 </div>
@@ -14543,10 +14544,10 @@ the results are much better than naive predictor ,accuracy is 60 perecent</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>  capital_gain, capital_loss, work_class, occupation, relationship</p>
 <ol>
-<li>capital_gain -: donation mainly depends on how much money you make</li>
-<li>capital_loss -: people with more losses are less likely to make donation</li>
-<li>work_class-:  certain class of people may be more entitled to make donations</li>
-<li>occupation-:  people with high class occupation are likely to make donations</li>
+<li>capital_gain -: more the gain, more is the income</li>
+<li>capital_loss -: losses can be an important factor to predict income of a person</li>
+<li>hours per week-:  more hours you put it, more likely is to earn more</li>
+<li>occupation-:  people with high class occupation are likely to earn more</li>
 <li>relationship-: factors such as how many people share the sallary becomes significant</li>
 </ol>
 
@@ -14934,10 +14935,9 @@ iIiISMooABQRERFJGQWAIiIiIimjAFBEREQkZf4/YtAOpmHVXKcAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> only 2 of the features like capital_loss and capital_gain matches</p>
-<p>age-: it is relevant beacuse matiority is defined by age , which is a very big factor of donor prediction</p>
-<p>hours_per_week-: if people work more hours , they have less time to think of external problems and are likely to make less donation</p>
-<p>education-num-: number of education years make people more aware of various factors and they are likely to make donations</p>
+<p><strong>Answer:</strong> only 3 of the features like capital_loss, hours per week and capital_gain matches</p>
+<p>age-: it is relevant beacuse your income tends to increase with more experience you have</p>
+<p>education-num-:more education you have , it is more likely you will employed in high paying job</p>
 
 </div>
 </div>
